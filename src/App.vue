@@ -10,13 +10,11 @@
         </div>
       </div>
       <div v-else class="d-flex justify-content-center align-items-center vh-100">
-        <div>
-          <div>
-            <Wordle v-bind:word="word"/>
-          </div>
-          <div class="note">
-            New starting word is generated daily at 00:00 UTC 
-          </div>
+        <div class="h-50">
+          <Wordle v-bind:word="word"/>
+        </div>
+        <div class="note">
+          New starting word is generated daily at 00:00 UTC 
         </div>
       </div>
     </section>
