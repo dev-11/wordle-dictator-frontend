@@ -74,7 +74,6 @@ body {
 }
 
 .note {
-  margin-top: 3px;
   font-size: 0.65rem;
   color: gray;
   bottom: 0;
