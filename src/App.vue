@@ -9,9 +9,14 @@
           <span class="sr-only">Loading...</span>
         </div>
       </div>
-      <div v-else class="d-flex justify-content-md-center align-items-center vh-100">
+      <div v-else class="d-flex justify-content-center align-items-center vh-100">
         <div>
-          <Wordle v-bind:word="word"/>
+          <div>
+            <Wordle v-bind:word="word"/>
+          </div>
+          <div class="note">
+            New starting word is generated daily at 00:00 UTC 
+          </div>
         </div>
       </div>
     </section>
@@ -66,6 +71,14 @@ body {
 
 .sr-only {
   display: none;
+}
+
+.note {
+  margin-top: 3px;
+  font-size: 0.65rem;
+  color: gray;
+  bottom: 0;
+  position: absolute;
 }
 
 </style>
