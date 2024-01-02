@@ -12,6 +12,13 @@
       <div v-else class="d-flex justify-content-center align-items-center vh-100">
         <div class="h-50">
           <Wordle v-bind:word="word"/>
+          <div class="world-link">
+            <a href="https://www.nytimes.com/games/wordle/">
+              <img src="/src/assets/wordle-icon.svg"
+              class="img-thumbnail"
+              title="Play Wordle" />
+            </a>
+          </div>
         </div>
         <div class="note">
           New starting word is generated daily at 00:00 UTC 
@@ -76,6 +83,13 @@ body {
   color: gray;
   bottom: 0;
   position: absolute;
+}
+
+.world-link {
+  margin-top: 20%;
+  transform: translateX(-50%);
+  position: absolute;
+  left: 50%;
 }
 
 </style>
