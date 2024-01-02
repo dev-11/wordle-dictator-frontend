@@ -86,10 +86,16 @@ body {
 }
 
 .world-link {
-  margin-top: 20%;
+  margin-top: 5%;
   transform: translateX(-50%);
   position: absolute;
   left: 50%;
+}
+
+@media(max-width: 1024px) {
+  .world-link {
+    margin-top: 20%;
+  }
 }
 
 </style>
