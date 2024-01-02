@@ -12,13 +12,21 @@
       <div v-else class="d-flex justify-content-center align-items-center vh-100">
         <div class="h-50">
           <Wordle v-bind:word="word"/>
+          
           <div class="world-link">
-            <a href="https://www.nytimes.com/games/wordle/" target="_blank">
+            <a href="https://fpx3r.app.goo.gl/app-wordle" class="phone-only">
+              <img src="/src/assets/wordle-icon.svg"
+              class="img-thumbnail"
+              title="Play Wordle" />
+            </a>
+
+            <a href="https://www.nytimes.com/games/wordle/" target="_blank" class="desktop-only">
               <img src="/src/assets/wordle-icon.svg"
               class="img-thumbnail"
               title="Play Wordle" />
             </a>
           </div>
+
         </div>
         <div class="note">
           New starting word is generated daily at 00:00 UTC 
@@ -92,10 +100,35 @@ body {
   left: 50%;
 }
 
-@media(max-width: 1024px) {
+@media(max-width: 1200px) {
   .world-link {
     margin-top: 20%;
   }
 }
+
+@media (max-width: 1199px) {
+    .desktop-only {
+        display: none;
+    }
+}
+
+@media (min-width: 1200px) {
+    .desktop-only {
+        display: block;
+    }
+}
+
+@media (max-width: 1199px) {
+    .phone-only {
+        display: block;
+    }
+}
+
+@media (min-width: 1200px) {
+    .phone-only {
+        display: none;
+    }
+}
+
 
 </style>
