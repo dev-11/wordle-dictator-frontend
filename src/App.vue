@@ -13,7 +13,7 @@
         <div class="h-50">
           <Wordle v-bind:word="word"/>
           <div class="world-link">
-            <a href="https://www.nytimes.com/games/wordle/">
+            <a href="https://www.nytimes.com/games/wordle/" target="_blank">
               <img src="/src/assets/wordle-icon.svg"
               class="img-thumbnail"
               title="Play Wordle" />
