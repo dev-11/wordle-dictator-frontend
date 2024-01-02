@@ -94,41 +94,33 @@ body {
 }
 
 .world-link {
-  margin-top: 5%;
   transform: translateX(-50%);
   position: absolute;
   left: 50%;
 }
 
-@media(max-width: 1200px) {
+@media (max-width: 1199px) {
+  .desktop-only {
+      display: none;
+  }
+  .phone-only {
+      display: block;
+  }
   .world-link {
     margin-top: 20%;
   }
 }
 
-@media (max-width: 1199px) {
-    .desktop-only {
-        display: none;
-    }
-}
-
 @media (min-width: 1200px) {
     .desktop-only {
         display: block;
     }
-}
-
-@media (max-width: 1199px) {
-    .phone-only {
-        display: block;
-    }
-}
-
-@media (min-width: 1200px) {
     .phone-only {
         display: none;
     }
+    .world-link {
+      margin-top: 5%;
+    }
 }
-
 
 </style>
